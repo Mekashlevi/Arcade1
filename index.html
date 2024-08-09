@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Metadata for the document -->
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for different screen sizes -->
+    <meta name="author" content="Levi Mekash"> <!-- Author of the document -->
+    <title>Arcade 1</title> <!-- Title of the webpage shown in the browser tab -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to the external CSS file for styling -->
+</head>
+
+<body>
+    <!-- Main heading of the page -->
+    <h1>Arcade Adventures</h1>
+    <h2>What would you like to play?</h2>
+    
+    <!-- Container for the game items -->
+    <div id="game-container">
+        
+        <!-- Game 1 - Guessing Game -->
+        <div class="game-item">
+            <figure>
+                <!-- Link to the image of the Guessing Game -->
+                <a href="https://cdn.midjourney.com/c9642737-a393-4408-8f1b-a10ecb2f36c3/0_2.png">
+                    <!-- Image of the Guessing Game with specified width and height -->
+                    <img class="image" id="guessingGameImage" src="image/guessingGame.png" alt="Guessing Game" width="300" height="300">
+                </a>
+            </figure>
+            <!-- Button to start the Guessing Game; triggers the startGuessingGame function when clicked -->
+            <button id="guessingGameBtn" onclick="startGuessingGame()">Guessing Game</button>
+        </div>
+        
+        <!-- Game 2 - Oracle -->
+        <div class="game-item">
+            <figure>
+                <!-- Link to the image of the Oracle Game -->
+                <a href="https://cdn.midjourney.com/fc24e881-a843-4ebf-a241-25695fc6b19c/0_1.png">
+                    <!-- Image of the Oracle Game with specified width and height -->
+                    <img class="image" id="oracleGameImage" src="image/oracleGame.png" alt="Oracle Game" width="300" height="300">
+                </a>
+            </figure>
+            <!-- Button to start the Oracle Game; triggers the startOracleGame function when clicked -->
+            <button id="oracleGameBtn" onclick="startOracleGame()">Consult the Oracle</button>
+        </div>
+        
+        <!-- Game 3 - Bear, Ninja, Hunter -->
+        <div class="game-item">
+            <figure>
+                <!-- Link to the image of the Bear, Ninja, Hunter Game -->
+                <a href="https://cdn.midjourney.com/b3ec2394-54b4-4051-a2fb-a815b92a6b82/0_0.png">
+                    <!-- Image of the Bear, Ninja, Hunter Game with specified width and height -->
+                    <img class="image" id="bnhGameImage" src="image/bnhGame.png" alt="BNH Game" width="300" height="300">
+                </a>
+            </figure>
+            <!-- Button to start the Bear, Ninja, Hunter Game; triggers the startBnhGame function when clicked -->
+            <button id="bnhGameBtn" onclick="startBnhGame()">Bear, Ninja, Hunter</button>
+        </div>
+
+        <!-- Game 4 - Even/Odd -->
+        <div class="game-item">
+            <figure>
+                <!-- Link to the image of the Even/Odd Game -->
+                <a href="https://cdn.midjourney.com/de359030-6284-4082-82ac-6e64d6770ec2/0_3.png">
+                    <!-- Image of the Even/Odd Game with specified width and height -->
+                    <img class="image" id="evenOddGameImage" src="image/evenOddGame.png" alt="Even/Odd Game" width="300" height="300">
+                </a>
+            </figure>
+            <!-- Button to start the Even/Odd Game; triggers the startEvenOddGame function when clicked -->
+            <button id="evenOddGameBtn" onclick="startEvenOddGame()">Even or Odd</button>
+        </div>
+    </div>
+
+    <!-- Link to the external JavaScript files for game functionality -->
+    <script src="js/playGame.js"></script>
+    <script src="js/guessingGame.js"></script>
+    <script src="js/oracleGame.js"></script>
+    <script src="js/bnhGame.js"></script>
+    <script src="js/evenOddGame.js"></script>
+
+    <!-- BEGIN FOOTER -->
+    <div class="footer">
+        <!-- Left side of the footer -->
+        <div id="footer-left">
+            <!-- Link to the main page -->
+            <a href="https://www.bellevuecollege.edu/">Back to Main Page</a>
+        </div>
+        <!-- Right side of the footer -->
+        <div id="footer-right">
+            <!-- Copyright and author information -->
+            <span>All photos & content created by: Levi Mekash</span>
+        </div>
+    </div>
+</body>
+</html>

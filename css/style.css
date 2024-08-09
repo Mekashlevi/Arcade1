@@ -1,0 +1,182 @@
+/* Apply general styles to the whole page */
+html, body {
+  height: 100%; /* Full height for both HTML and body */
+  width: 100%; /* Full width for both HTML and body */
+  margin: 0; /* Remove default margin */
+  font-family: Orbitron; /* Use Arcade font */
+  color: whitesmoke; /* Text color for better readability */
+  background: #3b3b3b; /* Dark background color for the page */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Center content and layout for the body */
+body {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
+h1 {
+  font-size: 3em; /* Large font size to match the theme */
+  font-weight: 700; /* Bold font for prominence */
+  text-align: center; /* Center-align the h1 text */
+  margin-bottom: 20px; /* Space below the heading */
+  color: orangered; /* Theme color for consistency */
+  text-transform: uppercase; /* Uppercase letters for emphasis */
+  text-decoration: underline; /* Underline for emphasis */
+  text-decoration-color: whitesmoke; /* Underline color for consistency */
+  text-underline-offset: 10px; /* Space between underline and text */
+  letter-spacing: 1px; /* Slightly increase letter spacing for readability */
+  word-spacing: 30px; /* Increase word spacing for readability */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Space between items */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  max-width: 100%; /* Prevent container from exceeding viewport width */
+  padding: 0 20px; /* Padding on the sides to prevent content from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
+}
+
+h2 {
+  font-size: 2em; /* Slightly smaller font size than h1 */
+  font-weight: 600; /* Slightly bold but less than h1 */
+  text-align: center; /* Center-align the h2 text */
+  margin-bottom: 30px; /* Space below the heading */
+  color: orangered; /* Complementary theme color */
+  text-transform: uppercase; /* Uppercase letters for consistency */
+  letter-spacing: 1px; /* Slightly increase letter spacing for readability */
+  word-spacing: 5px; /* Slightly increase letter spacing */
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Space between items */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  max-width: 100%; /* Prevent container from exceeding viewport width */
+  padding: 0 20px; /* Padding on the sides to prevent content from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
+}
+
+/* Container for game items with flexible layout */
+#game-container {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: row; /* Arrange children in a row */
+  align-items: center; /* Center items vertically */
+  justify-content: center; /* Center items horizontally */
+  gap: 40px; /* Space between items */
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines if needed */
+  max-width: 100%; /* Prevent container from exceeding viewport width */
+  padding: 0 20px; /* Padding on the sides to prevent content from touching the edges */
+  box-sizing: border-box; /* Include padding in the element's width calculation */
+}
+
+/* Style for each game item */
+.game-item {
+  text-align: center; /* Center-align text inside game items */
+  margin-bottom: 40px; /* Space below each game item */
+  flex: 1 1 auto; /* Allow items to grow and shrink as needed */
+}
+
+/* Remove default margin from figures */
+figure {
+  margin: 0;
+}
+
+/* Style for images within game items */
+.image {
+  border: 4px solid orangered; /* Orange border around images */
+  border-radius: 10px; /* Rounded corners for images */
+  box-shadow: 0 0 15px rgb(224, 0, 0, 0.9); /* Glowing effect around images */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for images */
+.image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 0 25px rgba(224, 0, 0, 0.9); /* Intense glow effect on hover */
+}
+
+/* Style for captions under images */
+.caption {
+  margin-top: 10px; /* Space above captions */
+  font-size: 0.9em; /* Slightly smaller font size for captions */
+  color: orangered; /* Orange color for captions */
+}
+
+/* Style for buttons */
+button {
+  background-color: orangered; /* Orange background color */
+  border: 2pt black solid; /* Black border around buttons */
+  color: #000000; /* Text color for buttons */
+  padding: 12px 40px; /* Padding inside buttons */
+  border-radius: 8px; /* Rounded corners for buttons */
+  font-size: 18px; /* Font size for button text */
+  font-weight: 550; /* Bold font weight for buttons */;
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  display: block; /* Display button as a block-level element */
+  width: 100%; /* Full width button */
+  max-width: 300px; /* Maximum width of the button */
+  text-align: center; /* Center-align text inside button */
+  margin: auto; /* Center button horizontally */
+  margin-top: 15px; /* Space above button */
+}
+
+/* Hover effect for buttons */
+button:hover {
+  background-color: #e00000; /* Darker orange on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Style for links */
+a {
+  color: whitesmoke; /* Color of links */
+  text-decoration: none; /* Remove underline from links */
+  font-weight: bold; /* Bold text for links */
+}
+
+/* Hover effect for links */
+a:hover, #footer-left a:hover {
+  color: #e00000; /* Darker orange on hover */
+  text-decoration: underline; /* Underline text on hover */
+}
+
+/* Style for the footer section */
+.footer {
+  margin-top: auto; /* Push footer to the bottom of the page */
+  font-size: 0.9em; /* Slightly smaller font size for footer text */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between footer items */
+  align-items: center; /* Center items vertically */
+  width: 100%; /* Full width footer */
+  padding: 10px; /* Padding inside the footer */
+  background-color: #2e2e2e; /* Dark background color for footer */
+  color: orangered; /* Text color for footer */
+  border-top: 1px solid #ffffff; /* Optional top border for styling */
+  text-align: right; /* Right-align text inside footer */
+}
+
+/* Style for footer-left and footer-right sections */
+#footer-left, #footer-right {
+  display: inline-block; /* Display as inline-block elements */
+  vertical-align: middle; /* Align elements vertically */
+}
+
+/* Margin for footer-right section */
+#footer-right {
+  margin: 0 5px 0 0; /* Top, Right, Bottom, Left margins */
+}
+
+/* Margin for footer-left section */
+#footer-left {
+  margin: 0 0 0 5px; /* Top, Right, Bottom, Left margins */
+}
+
+/* Style for footer-left links */
+#footer-left a {
+  color: orangered; /* Orange color for footer-left links */
+}
